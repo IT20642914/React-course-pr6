@@ -1,5 +1,8 @@
 # React-course-pr6
 # React Quiz App
+![image](https://github.com/user-attachments/assets/68086444-3706-4cab-b4eb-13574e9eb7a6)
+
+![image](https://github.com/user-attachments/assets/c9385a9a-8f31-4476-a5d2-da60a3a28569)
 
 This project is a simple Quiz Application built with **React**. It was created as part of a React course project, focusing on state management, components, and hooks. In this app, users are presented with a set of questions and must answer them within the given time limit. At the end of the quiz, a summary of the user's performance is shown, including correct, incorrect, and skipped answers.
 ## Features
