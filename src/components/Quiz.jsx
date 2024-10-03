@@ -1,8 +1,7 @@
 import React, { useState, useCallback } from "react";
-import QUESTIONS from "../questions";
-import quizCompleted from "../assets/quiz-complete.png";
+import QUESTIONS from "../../questions";
 import Question from "./Question";
-
+import Summary from "./Summary";
 const Quiz = () => {
   const [UserAnswers, setUserAnswers] = useState([]);
   const ActiveQuestionIndex =UserAnswers.length 
@@ -21,17 +20,7 @@ const Quiz = () => {
 
   if (quizIsOver) {
     return (
-      <div id="summary">
-        <h2>Quiz Completed</h2>
-        <img src={quizCompleted} alt="Quiz Completed" />
-        <ul>
-          {QUESTIONS.map((question, index) => (
-            <li key={question.id}>
-              {question.text} - {UserAnswers[index] !== undefined ? UserAnswers[index] : "Skipped"}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <Summary UserAnswers={UserAnswers}/>
     );
   }
 
